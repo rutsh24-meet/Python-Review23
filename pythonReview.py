@@ -46,7 +46,12 @@ def like(video):
 
 
 def add_many_likes(video):
-    pass
+    if "likes" in video:
+        num = input("Enter number of likes to add: ")
+        if not num.isnumeric():
+            print("Invalid option...")
+            print("Returning to main")
+        
 
 
 def dislike(video):
